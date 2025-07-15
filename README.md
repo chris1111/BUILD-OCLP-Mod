@@ -6,5 +6,4 @@
 
 - [x] `Clone and Build OCLP-Mod:`
 ```bash
-git clone https://github.com/chris1111/BUILD-OCLP-Mod.git && cd ./$HOME/OCLP-Mod && ./SetIcon/seticon -d ./SetIcon/AppIcon.icns ./BUILD-OCLP-Mod.command
-
+git clone https://github.com/chris1111/BUILD-OCLP-Mod.git && ./BUILD-OCLP-Mod/SetIcon/seticon -d ./BUILD-OCLP-Mod/SetIcon/AppIcon.icns ./BUILD-OCLP-Mod/BUILD-OCLP-Mod.command && Open ./BUILD-OCLP-Mod
