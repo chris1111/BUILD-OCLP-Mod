@@ -12,6 +12,11 @@ Usage BUILD-OCLP-Mod testing on macOS Tahoe 26 and macOS Sequoia 15.6
 git clone https://github.com/chris1111/BUILD-OCLP-Mod.git && ./BUILD-OCLP-Mod/Pics/SetIcon/seticon -d ./BUILD-OCLP-Mod/Pics/SetIcon/AppIcon.icns ./BUILD-OCLP-Mod/BUILD-OCLP-Mod.command && Open ./BUILD-OCLP-Mod
 ```
 
+### [x] `Clone BUILD-OCLP-Mod-tahoe.command:`
+```bash
+git clone https://github.com/chris1111/BUILD-OCLP-Mod.git && ./BUILD-OCLP-Mod/Pics/SetIcon/seticon -d ./BUILD-OCLP-Mod/Pics/SetIcon/AppIcon.icns ./BUILD-OCLP-Mod/BUILD-OCLP-Mod-tahoe.command && Open ./BUILD-OCLP-Mod
+```
+
 
 ### BUILD-OCLP-Mod.command: ⬇︎
 <img src="Pics/Screenshot-1.png" alt="Github Project" style="width:80%;">
