@@ -164,6 +164,10 @@ rm -rf ./Universal-Binaries.dmg
 rm -rf ./build
 rm -rf ./dist
 # Create the pyinstaller based Application
+Sleep 2
+echo "Downloading Universal-Binaries.dmg"
+curl -L https://github.com/chris1111/OCLP-Mod-PatcherSupportPkg/releases/download/V1/Universal-Binaries.dmg -o ~/Developer/OCLP-Mod/Universal-Binaries.dmg
+Sleep 1
 python3 Build-Project.command
 # Open build folder
 open ./dist/
@@ -186,6 +190,14 @@ Sleep 2
 pip3 install pyinstaller
 # Create the pyinstaller based Application
 Sleep 2
+if [[ -f ~/Developer/OCLP-Mod/Universal-Binaries.dmg ]]; then
+echo "Universal-Binaries.dmg exists"
+
+else
+  echo "Downloading Universal-Binaries.dmg"
+  curl -L https://github.com/chris1111/OCLP-Mod-PatcherSupportPkg/releases/download/V1/Universal-Binaries.dmg -o ~/Developer/OCLP-Mod/Universal-Binaries.dmg
+  Sleep 1
+fi
 python3 Build-Project.command
 # Open build folder
 open ./dist/
