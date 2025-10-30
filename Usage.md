@@ -7,14 +7,14 @@ Usage BUILD-OCLP-Mod testing on macOS Tahoe 26 and macOS Sequoia 15.6
   
 
   
-### [x] `Clone BUILD-OCLP-Mod.command:`
+### [x] `Clone BUILD-OCLP-Mod.command (main branch)`
 ```bash
-git clone https://github.com/chris1111/BUILD-OCLP-Mod.git && ./BUILD-OCLP-Mod/Pics/SetIcon/seticon -d ./BUILD-OCLP-Mod/Pics/SetIcon/AppIcon.icns ./BUILD-OCLP-Mod/BUILD-OCLP-Mod.command && Open ./BUILD-OCLP-Mod
+git clone https://github.com/chris1111/BUILD-OCLP-Mod.git && rm -rf ./BUILD-OCLP-Mod/BUILD-OCLP-Mod-tahoe.command && ./BUILD-OCLP-Mod/Pics/SetIcon/seticon -d ./BUILD-OCLP-Mod/Pics/SetIcon/AppIcon.icns ./BUILD-OCLP-Mod/BUILD-OCLP-Mod.command && Open ./BUILD-OCLP-Mod
 ```
 
-### [x] `Clone BUILD-OCLP-Mod-tahoe.command:`
+### [x] `Clone BUILD-OCLP-Mod-tahoe.command (tahoe-test branch):`
 ```bash
-git clone https://github.com/chris1111/BUILD-OCLP-Mod.git && ./BUILD-OCLP-Mod/Pics/SetIcon/seticon -d ./BUILD-OCLP-Mod/Pics/SetIcon/AppIcon.icns ./BUILD-OCLP-Mod/BUILD-OCLP-Mod-tahoe.command && Open ./BUILD-OCLP-Mod
+git clone https://github.com/chris1111/BUILD-OCLP-Mod.git && rm -rf ./BUILD-OCLP-Mod/BUILD-OCLP-Mod.command && ./BUILD-OCLP-Mod/Pics/SetIcon/seticon -d ./BUILD-OCLP-Mod/Pics/SetIcon/AppIcon.icns ./BUILD-OCLP-Mod/BUILD-OCLP-Mod-tahoe.command && Open ./BUILD-OCLP-Mod
 ```
 
 
