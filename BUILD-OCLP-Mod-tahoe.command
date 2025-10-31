@@ -191,7 +191,7 @@ pip3 install pyinstaller
 # Create the pyinstaller based Application
 Sleep 2
 if [[ -f ~/Developer/OCLP-Mod/Universal-Binaries.dmg ]]; then
-echo "Universal-Binaries.dmg exists"
+  echo "Universal-Binaries.dmg exists"
 
 else
   echo "Downloading Universal-Binaries.dmg"
