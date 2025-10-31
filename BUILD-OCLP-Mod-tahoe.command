@@ -166,7 +166,7 @@ rm -rf ./dist
 # Create the pyinstaller based Application
 Sleep 2
 echo "Downloading Universal-Binaries.dmg"
-curl -L https://github.com/chris1111/OCLP-Mod-PatcherSupportPkg/releases/download/V1/Universal-Binaries.dmg -o ~/Developer/OCLP-Mod/Universal-Binaries.dmg
+curl -L https://github.com/laobamac/PatcherSupportPkg/releases/download/pre-release-61b38041c145d02a02ea0318858709ec8a3a32ea/Universal-Binaries.dmg -o ~/Developer/OCLP-Mod/Universal-Binaries.dmg
 Sleep 1
 python3 Build-Project.command
 # Open build folder
@@ -195,7 +195,7 @@ if [[ -f ~/Developer/OCLP-Mod/Universal-Binaries.dmg ]]; then
 
 else
   echo "Downloading Universal-Binaries.dmg"
-  curl -L https://github.com/chris1111/OCLP-Mod-PatcherSupportPkg/releases/download/V1/Universal-Binaries.dmg -o ~/Developer/OCLP-Mod/Universal-Binaries.dmg
+  curl -L https://github.com/laobamac/PatcherSupportPkg/releases/download/pre-release-61b38041c145d02a02ea0318858709ec8a3a32ea/Universal-Binaries.dmg -o ~/Developer/OCLP-Mod/Universal-Binaries.dmg
   Sleep 1
 fi
 python3 Build-Project.command
