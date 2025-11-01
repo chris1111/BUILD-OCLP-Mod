@@ -146,6 +146,12 @@ Sleep 1
 echo "[Update OCLP-Mod Main]"
 Sleep 1
 cd ~/Developer/OCLP-Mod/
+# Remove Binaries
+find . -name '*.pyc' -type f -delete
+rm -rf ./payloads.dmg
+rm -rf ./Universal-Binaries.dmg
+rm -rf ./build
+rm -rf ./dist
 if [[ -d .git ]]; then
   git fetch --all
   git pull origin main
@@ -158,11 +164,6 @@ else
 fi
 
 cd ~/Developer/OCLP-Mod/
-# Remove Binaries
-rm -rf ./payloads.dmg
-rm -rf ./Universal-Binaries.dmg
-rm -rf ./build
-rm -rf ./dist
 # Create the pyinstaller based Application
 python3 Build-Project.command
 # Open build folder

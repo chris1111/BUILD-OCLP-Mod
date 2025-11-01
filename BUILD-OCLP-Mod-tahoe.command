@@ -125,7 +125,7 @@ Sleep 1
 cd ~/Developer/OCLP-Mod/
 if [[ -d .git ]]; then
   git fetch --all
-  git pull origin main
+  git pull origin tahoe-test
 echo "
 If you see remote update files, now you can Update `tput setaf 7``tput sgr0``tput bold``tput setaf 2`(Option C)`tput sgr0` `tput setaf 7``tput sgr0`"
 else
@@ -146,11 +146,17 @@ Sleep 1
 echo "[Update OCLP-Mod tahoe-test]"
 Sleep 1
 cd ~/Developer/OCLP-Mod/
+# Remove Binaries
+find . -name '*.pyc' -type f -delete
+rm -rf ./payloads.dmg
+rm -rf ./Universal-Binaries.dmg
+rm -rf ./build
+rm -rf ./dist
 if [[ -d .git ]]; then
   git fetch --all
-  git pull origin main
+  git pull origin tahoe-test
 echo "
-Update OCLP-Mod main Done"
+Update OCLP-Mod tahoe-test Done"
 git status
 
 else
@@ -158,16 +164,7 @@ else
 fi
 
 cd ~/Developer/OCLP-Mod/
-# Remove Binaries
-rm -rf ./payloads.dmg
-rm -rf ./Universal-Binaries.dmg
-rm -rf ./build
-rm -rf ./dist
 # Create the pyinstaller based Application
-Sleep 2
-echo "Downloading Universal-Binaries.dmg"
-curl -L https://github.com/laobamac/PatcherSupportPkg/releases/download/pre-release-61b38041c145d02a02ea0318858709ec8a3a32ea/Universal-Binaries.dmg -o ~/Developer/OCLP-Mod/Universal-Binaries.dmg
-Sleep 1
 python3 Build-Project.command
 # Open build folder
 open ./dist/
@@ -190,19 +187,11 @@ Sleep 2
 pip3 install pyinstaller
 # Create the pyinstaller based Application
 Sleep 2
-if [[ -f ~/Developer/OCLP-Mod/Universal-Binaries.dmg ]]; then
-  echo "Universal-Binaries.dmg exists"
-
-else
-  echo "Downloading Universal-Binaries.dmg"
-  curl -L https://github.com/laobamac/PatcherSupportPkg/releases/download/pre-release-61b38041c145d02a02ea0318858709ec8a3a32ea/Universal-Binaries.dmg -o ~/Developer/OCLP-Mod/Universal-Binaries.dmg
-  Sleep 1
-fi
 python3 Build-Project.command
 # Open build folder
 open ./dist/
 echo "  "
-echo "`tput setaf 7``tput sgr0``tput bold``tput setaf 26`Building --> All OCLP-Mod Main Done!`tput sgr0` `tput setaf 7``tput sgr0`"
+echo "`tput setaf 7``tput sgr0``tput bold``tput setaf 26`Building --> All OCLP-Mod tahoe-test Done!`tput sgr0` `tput setaf 7``tput sgr0`"
 echo "———————————————————————————————————————————————————————————————————————————————"
 echo " "
 
