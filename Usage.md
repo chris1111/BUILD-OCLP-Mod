@@ -17,6 +17,11 @@ git clone https://github.com/chris1111/BUILD-OCLP-Mod.git && rm -rf ./BUILD-OCLP
 git clone https://github.com/chris1111/BUILD-OCLP-Mod.git && rm -rf ./BUILD-OCLP-Mod/BUILD-OCLP-Mod.command && ./BUILD-OCLP-Mod/Pics/SetIcon/seticon -d ./BUILD-OCLP-Mod/Pics/SetIcon/AppIcon.icns ./BUILD-OCLP-Mod/BUILD-OCLP-Mod-tahoe.command && Open ./BUILD-OCLP-Mod
 ```
 
+### [x] `Clone BUILD-OCLP-Mod-tahoe.command (Automate Universal-Binaries test-branch):`
+```bash
+git clone --branch test https://github.com/chris1111/BUILD-OCLP-Mod.git && rm -rf ./BUILD-OCLP-Mod/BUILD-OCLP-Mod.command && ./BUILD-OCLP-Mod/Pics/SetIcon/seticon -d ./BUILD-OCLP-Mod/Pics/SetIcon/AppIcon.icns ./BUILD-OCLP-Mod/BUILD-OCLP-Mod-tahoe.command && Open ./BUILD-OCLP-Mod
+```
+
 
 ### BUILD-OCLP-Mod.command: ⬇︎
 <img src="Pics/Screenshot-1.png" alt="Github Project" style="width:80%;">

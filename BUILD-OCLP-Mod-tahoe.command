@@ -146,6 +146,7 @@ Sleep 1
 echo "[Update OCLP-Mod tahoe-test]"
 Sleep 1
 cd ~/Developer/OCLP-Mod/
+printf '%s\n    %s\n' 'PatcherSupportPkg' >> .gitignore
 # Remove Binaries
 find . -name '*.pyc' -type f -delete
 rm -rf ./payloads.dmg
@@ -163,6 +164,15 @@ else
   echo "Error: This directory is not a Git. Unable to update!"
 fi
 
+# Universal-Binaries.dmg tahoe-test
+Sleep 1
+rm -rf ~/Developer/OCLP-Mod/PatcherSupportPkg
+cd ~/Developer/OCLP-Mod/
+git clone --branch tahoe-test https://github.com/laobamac/PatcherSupportPkg.git
+cd ~/Developer/OCLP-Mod/PatcherSupportPkg
+./Generate-DMG.command
+mv ./Universal-Binaries.dmg ~/Developer/OCLP-Mod/Universal-Binaries.dmg
+Sleep 1
 cd ~/Developer/OCLP-Mod/
 # Create the pyinstaller based Application
 python3 Build-Project.command
@@ -187,6 +197,18 @@ Sleep 2
 pip3 install pyinstaller
 # Create the pyinstaller based Application
 Sleep 2
+# Universal-Binaries.dmg tahoe-test
+Sleep 1
+rm -rf ~/Developer/OCLP-Mod/PatcherSupportPkg
+rm -rf ~/Developer/OCLP-Mod/Universal-Binaries.dmg
+cd ~/Developer/OCLP-Mod/
+git clone --branch tahoe-test https://github.com/laobamac/PatcherSupportPkg.git
+cd ~/Developer/OCLP-Mod/PatcherSupportPkg
+./Generate-DMG.command
+mv ./Universal-Binaries.dmg ~/Developer/OCLP-Mod/Universal-Binaries.dmg
+Sleep 1
+cd ~/Developer/OCLP-Mod/
+printf '%s\n    %s\n' 'PatcherSupportPkg' >> .gitignore
 python3 Build-Project.command
 # Open build folder
 open ./dist/
