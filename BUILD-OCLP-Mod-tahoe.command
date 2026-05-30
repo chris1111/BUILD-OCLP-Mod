@@ -37,7 +37,7 @@ echo "                                Welcome `tput bold`$nameh`tput sgr0` "
 echo " "                                                            
 echo "              Prerequisite: Command Line Tools (CLT) for Xcode 
      (from '\033[1mxcode-select --install\033[0m' or Developer Apple Command Line Tools
-                If you have '\033[1mXcode installed\033[0m' that's also good"
+                You must also have '\033[1mXcode installed!\033[0m'"
 echo " "
 echo "                        Type `tput setaf 7``tput sgr0``tput bold``tput setaf 2`A`tput sgr0` `tput setaf 7``tput sgr0`➣  to Build OCLP-Mod "
 echo "                        Type `tput setaf 7``tput sgr0``tput bold``tput setaf 2`B`tput sgr0` `tput setaf 7``tput sgr0`➣  to Check Update OCLP-Mod "
